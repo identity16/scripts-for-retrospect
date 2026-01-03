@@ -25,6 +25,14 @@ node fetch-github-prs.js --token=ghp_xxx --org=org-name --emails=email1,email2 -
 
 출력: `github-prs-{org}-{year}.md`
 
+### Fetch Linear Activity (`fetch-linear-activity.js`)
+
+```bash
+node fetch-linear-activity.js --token=lin_api_xxx --year=2025
+```
+
+출력: `linear-activity-{username}-{year}.md`
+
 ## Architecture Notes
 
 - 스크립트들은 외부 패키지 의존성 없이 Node.js 내장 모듈만 사용합니다
@@ -32,3 +40,4 @@ node fetch-github-prs.js --token=ghp_xxx --org=org-name --emails=email1,email2 -
 - 필요 Slack scope: `search:read`, `users:read`, (선택) `im:read`
 - GitHub 스크립트는 Personal Access Token이 필요합니다
 - 필요 GitHub scope: `read:org`, (private repo 시) `repo`
+- Linear 스크립트는 Personal API Key가 필요합니다 (https://linear.app/settings/api)

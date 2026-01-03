@@ -4,3 +4,4 @@
 
 - **Fetch Slack Threads([Docs](./docs/FETCH_SLACK_THREADS.md), [Script](./fetch-slack-threads.js))**: 연도와 슬랙 유저명을 넣으면 한해동안 유저가 남긴 모든 메시지를 주 단위로 묶어서 Markdown으로 만들어주는 스크립트
 - **Fetch GitHub PRs([Docs](./docs/FETCH_GITHUB_PRS.md), [Script](./fetch-github-prs.js))**: GitHub Organization에서 특정 이메일로 작업한 PR을 주 단위로 정리해주는 스크립트
+- **Fetch Linear Activity([Docs](./docs/FETCH_LINEAR_ACTIVITY.md), [Script](./fetch-linear-activity.js))**: Linear에서 생성/완료한 이슈와 댓글을 주 단위로 정리해주는 스크립트
